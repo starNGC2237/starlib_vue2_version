@@ -1,28 +1,46 @@
+<!--
+ * @Author: zhilutianji
+ * @Date: 2021-12-25 18:50:22
+ * @LastEditors: zhilutianji
+ * @LastEditTime: 2021-12-25 20:39:19
+ * @Description: file content
+ * @FilePath: \starlib_vue2_version\src\App.vue
+-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--
+      <p @click="aaa()">{{this.$store.state.a}}</p>
+    -->
+    <el-row type="flex" class="row">
+      <FullWindow/>
+    </el-row>
+    <el-row type="flex" style="background-color: blueviolet;" class="row"></el-row>
+    <el-row type="flex" style="background-color: yellow;" class="row"></el-row>
+    <el-row type="flex" style="background-color:black;" class="bottom"></el-row>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FullWindow from './components/FullWindow.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    FullWindow
+  },
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .row{
+    width: 100%;
+    height: 100vh;
+    
+  }
+  .bottom{
+    width: 100%;
+    height: 40vh;
+  }
 </style>
