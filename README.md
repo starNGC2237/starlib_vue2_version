@@ -1,4 +1,6 @@
 # starlib_vue2_version
+starlibrary的vue2实现
+使用vue2 + vue-cli + vuex + vue-router + axios +  element-ui
 
 ## Project setup
 ```
